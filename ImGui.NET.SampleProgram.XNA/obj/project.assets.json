@@ -1,0 +1,425 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "DynamicLanguageRuntime/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "dependencies": {
+          "DynamicLanguageRuntime": "[1.2.2]"
+        },
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        }
+      },
+      "MonoGame.Framework.DesktopGL/3.6.0.1625": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MonoGame.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MonoGame.Framework.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "ImGui.NET/1.65.0-beta3": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "compile": {
+          "bin/placeholder/ImGui.NET.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImGui.NET.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.2/win7-x86": {
+      "DynamicLanguageRuntime/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "dependencies": {
+          "DynamicLanguageRuntime": "[1.2.2]"
+        },
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        }
+      },
+      "MonoGame.Framework.DesktopGL/3.6.0.1625": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MonoGame.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MonoGame.Framework.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "ImGui.NET/1.65.0-beta3": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "compile": {
+          "bin/placeholder/ImGui.NET.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImGui.NET.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DynamicLanguageRuntime/1.2.2": {
+      "sha512": "Wz3dyDYWpNp1unPOsywQHT/hH/4McJvleVGNEQ9mokGB5VCWsr8Azv2AmV2mNuaPDLFKJSq/kqpCJ568jlz0og==",
+      "type": "package",
+      "path": "dynamiclanguageruntime/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "dynamiclanguageruntime.1.2.2.nupkg.sha512",
+        "dynamiclanguageruntime.nuspec",
+        "lib/net45/Microsoft.Dynamic.dll",
+        "lib/net45/Microsoft.Dynamic.xml",
+        "lib/net45/Microsoft.Scripting.Metadata.dll",
+        "lib/net45/Microsoft.Scripting.Metadata.xml",
+        "lib/net45/Microsoft.Scripting.dll",
+        "lib/net45/Microsoft.Scripting.xml",
+        "lib/netcoreapp2.0/Microsoft.Dynamic.dll",
+        "lib/netcoreapp2.0/Microsoft.Dynamic.xml",
+        "lib/netcoreapp2.0/Microsoft.Scripting.Metadata.dll",
+        "lib/netcoreapp2.0/Microsoft.Scripting.Metadata.xml",
+        "lib/netcoreapp2.0/Microsoft.Scripting.dll",
+        "lib/netcoreapp2.0/Microsoft.Scripting.xml",
+        "lib/netcoreapp2.1/Microsoft.Dynamic.dll",
+        "lib/netcoreapp2.1/Microsoft.Dynamic.xml",
+        "lib/netcoreapp2.1/Microsoft.Scripting.Metadata.dll",
+        "lib/netcoreapp2.1/Microsoft.Scripting.Metadata.xml",
+        "lib/netcoreapp2.1/Microsoft.Scripting.dll",
+        "lib/netcoreapp2.1/Microsoft.Scripting.xml"
+      ]
+    },
+    "IronPython/2.7.9": {
+      "sha512": "lGN9Dxn6m39m/zPVsQWTBk7e4zNgRb7k2T/Eazp7/0PnbJ1raalpOYVr0//RpX2Mw4X3ZdjnV1WguBoDs7zIMQ==",
+      "type": "package",
+      "path": "ironpython/2.7.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "ironpython.2.7.9.nupkg.sha512",
+        "ironpython.nuspec",
+        "lib/net45/IronPython.Modules.dll",
+        "lib/net45/IronPython.Modules.xml",
+        "lib/net45/IronPython.SQLite.dll",
+        "lib/net45/IronPython.SQLite.xml",
+        "lib/net45/IronPython.Wpf.dll",
+        "lib/net45/IronPython.Wpf.xml",
+        "lib/net45/IronPython.dll",
+        "lib/net45/IronPython.xml",
+        "lib/netcoreapp2.0/IronPython.Modules.dll",
+        "lib/netcoreapp2.0/IronPython.Modules.xml",
+        "lib/netcoreapp2.0/IronPython.SQLite.dll",
+        "lib/netcoreapp2.0/IronPython.SQLite.xml",
+        "lib/netcoreapp2.0/IronPython.dll",
+        "lib/netcoreapp2.0/IronPython.xml",
+        "lib/netcoreapp2.1/IronPython.Modules.dll",
+        "lib/netcoreapp2.1/IronPython.Modules.xml",
+        "lib/netcoreapp2.1/IronPython.SQLite.dll",
+        "lib/netcoreapp2.1/IronPython.SQLite.xml",
+        "lib/netcoreapp2.1/IronPython.dll",
+        "lib/netcoreapp2.1/IronPython.xml"
+      ]
+    },
+    "MonoGame.Framework.DesktopGL/3.6.0.1625": {
+      "sha512": "S/nu4kMomWq4bWgQX22Fre/fZws8Q6AaS4i/Xx2CmZkN7+EqSUJCt3WAiG6U7UikyBYKZnkHWaID8xxC9D8YSQ==",
+      "type": "package",
+      "path": "monogame.framework.desktopgl/3.6.0.1625",
+      "files": [
+        ".nupkg.metadata",
+        "content/net40/MonoGame.Framework.dll.config",
+        "lib/net40/MonoGame.Framework.dll",
+        "lib/net40/MonoGame.Framework.xml",
+        "monogame.framework.desktopgl.3.6.0.1625.nupkg.sha512",
+        "monogame.framework.desktopgl.nuspec",
+        "readme.txt"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "VCJfpWcYG1gT3WwivZWgT0KaqY678MQBvrOI2si6V8GHeQOtuW+wpiv5ss4KyfGG+cFFdPNaI+nw2/kExCtGgQ==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "ZhdgJiihSOGD325jClouHy8WSPtwFSj6K1OymoEyN0Wc9Y6X2OVxn65VKfTWHQOYM+QljlVSreporVNvZm8rEA==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "sha512": "9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "ImGui.NET/1.65.0-beta3": {
+      "type": "project",
+      "path": "../ImGui.NET/ImGui.NET.csproj",
+      "msbuildProject": "../ImGui.NET/ImGui.NET.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "ImGui.NET >= 1.65.0-beta3",
+      "IronPython >= 2.7.9",
+      "MonoGame.Framework.DesktopGL >= 3.6.0.1625"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gabeg\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\code\\imageFilter-2\\ImGui.NET.SampleProgram.XNA\\ImGui.NET.ImageFilter.csproj",
+      "projectName": "ImGuiNET.ImageFilter",
+      "projectPath": "C:\\code\\imageFilter-2\\ImGui.NET.SampleProgram.XNA\\ImGui.NET.ImageFilter.csproj",
+      "packagesPath": "C:\\Users\\gabeg\\.nuget\\packages\\",
+      "outputPath": "C:\\code\\imageFilter-2\\ImGui.NET.SampleProgram.XNA\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\gabeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "projectReferences": {
+            "C:\\code\\imageFilter-2\\ImGui.NET\\ImGui.NET.csproj": {
+              "projectPath": "C:\\code\\imageFilter-2\\ImGui.NET\\ImGui.NET.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net462": {
+        "dependencies": {
+          "IronPython": {
+            "target": "Package",
+            "version": "[2.7.9, )"
+          },
+          "MonoGame.Framework.DesktopGL": {
+            "target": "Package",
+            "version": "[3.6.0.1625, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+C:\code\imageFilter-2\ConsoleApp1\ImGui.NET.SampleProgram.XNA\obj\Debug\ImageFilter.csprojAssemblyReference.cache
+C:\code\imageFilter-2\ConsoleApp1\ImGui.NET.SampleProgram.XNA\obj\Debug\ImageFilter.exe.config
+C:\code\imageFilter-2\ConsoleApp1\ImGui.NET.SampleProgram.XNA\obj\Debug\ImageFilter.csproj.CoreCompileInputs.cache
+C:\code\imageFilter-2\ConsoleApp1\ImGui.NET.SampleProgram.XNA\obj\Debug\ImageFilter.AssemblyInfoInputs.cache
+C:\code\imageFilter-2\ConsoleApp1\ImGui.NET.SampleProgram.XNA\obj\Debug\ImageFilter.AssemblyInfo.cs

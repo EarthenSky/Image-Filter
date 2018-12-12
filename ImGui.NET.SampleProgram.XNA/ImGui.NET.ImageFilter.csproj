@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AssemblyName>ImGuiNET.ImageFilter</AssemblyName>
+        <RootNamespace>ImGuiNET.ImageFilter</RootNamespace>
+        <TargetFramework>net462</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ImGui.NET\ImGui.NET.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="C:\code\imageFilter-2\deps\cimgui\win-x64\cimgui.dll" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="C:\code\imageFilter-2\deps\cimgui\osx-x64\cimgui.dylib" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="C:\code\imageFilter-2\deps\cimgui\linux-x64\cimgui.so" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="IronPython" Version="2.7.9" />
+      <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.6.0.1625" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.CSharp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="components\copy.py">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="components\c_rgb.py">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="components\c_debug.py">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="components\c_smoothing.py">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="x64\SDL2.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="x86\SDL2.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
