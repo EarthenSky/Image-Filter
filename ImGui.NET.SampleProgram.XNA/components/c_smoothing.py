@@ -5,7 +5,8 @@ class Component():
     def __init__(self):
         self._components = []
         self.name = "smoothing"
-
+    
+    # TODO: add a component for algorithm repetitions instead of ranged averaging.
     def components(self):
         # Components are tuples with the data (id, title, init, min, max, type, is_headsup)
         self._components.append( (1, "Horizontal Smoothing", False, 0, 0, 7, True) )
@@ -13,7 +14,7 @@ class Component():
         self._components.append( (3, "Diagonal Smoothing",   False, 0, 0, 7, True) )
         self._components.append( (4, "Smoothing Coefficient", 1.0, 0.0, 10.0, 2, True) )
         self._components.append( (5, "SC. is how heavily adjacent pixels are weighted.", 0, 0, 0, 6, False) )
-
+    
     # TODO: implement diagonal smoothing.
     # TODO: add ranged averaging (use more adjacent pixels.) & option.
     def run(self, image_data, component_values, width, size):
