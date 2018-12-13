@@ -32,6 +32,9 @@
       <None Update="components\copy.py">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+      <None Update="components\c_inverse.py">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
       <None Update="components\c_rgb.py">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>

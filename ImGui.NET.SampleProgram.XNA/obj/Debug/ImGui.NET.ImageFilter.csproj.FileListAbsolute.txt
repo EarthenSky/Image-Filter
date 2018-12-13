@@ -367,3 +367,4 @@ C:\GitHub\Image-Filter\ImGui.NET.SampleProgram.XNA\bin\Debug\x86\SDL2.dll
 C:\GitHub\Image-Filter\ImGui.NET.SampleProgram.XNA\bin\Debug\ImGuiNET.ImageFilter.exe.config
 C:\GitHub\Image-Filter\ImGui.NET.SampleProgram.XNA\bin\Debug\ImGuiNET.ImageFilter.exe
 C:\GitHub\Image-Filter\ImGui.NET.SampleProgram.XNA\bin\Debug\ImGuiNET.ImageFilter.pdb
+C:\GitHub\Image-Filter\ImGui.NET.SampleProgram.XNA\bin\Debug\components\c_inverse.py
