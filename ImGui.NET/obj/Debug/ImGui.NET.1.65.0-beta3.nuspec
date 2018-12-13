@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ImGui.NET</id>
+    <version>1.65.0-beta3</version>
+    <authors>Eric Mellino</authors>
+    <owners>Eric Mellino</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/mellinoe/imgui.net</projectUrl>
+    <description>A .NET wrapper for the Dear ImGui library.</description>
+    <tags>ImGui ImGui.NET Immediate Mode GUI</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Buffers" version="4.4.0" exclude="Build,Analyzers" />
+        <dependency id="System.Numerics.Vectors" version="4.4.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="4.4.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\GitHub\Image-Filter\ImGui.NET\bin\Debug\netstandard2.0\ImGui.NET.dll" target="lib\netstandard2.0\ImGui.NET.dll" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\win-x86\cimgui.dll" target="runtimes\win-x86\native\cimgui.dll" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\win-x64\cimgui.dll" target="runtimes\win-x64\native\cimgui.dll" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\linux-x64\cimgui.so" target="runtimes\linux-x64\native\cimgui.so" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\osx-x64\cimgui.dylib" target="runtimes\osx-x64\native\cimgui.dylib" />
+  </files>
+</package>

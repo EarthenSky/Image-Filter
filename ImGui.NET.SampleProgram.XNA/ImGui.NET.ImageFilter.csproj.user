@@ -5,5 +5,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>ImGuiNET.ImageFilter</ActiveDebugProfile>
+    <_LastSelectedProfileId>C:\GitHub\Image-Filter\ImGui.NET.SampleProgram.XNA\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
 </Project>

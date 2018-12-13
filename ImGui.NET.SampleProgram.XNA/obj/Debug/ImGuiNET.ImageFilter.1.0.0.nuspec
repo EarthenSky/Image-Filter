@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ImGuiNET.ImageFilter</id>
+    <version>1.0.0</version>
+    <authors>ImGuiNET.ImageFilter</authors>
+    <owners>ImGuiNET.ImageFilter</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="ImGui.NET" version="1.65.0-beta3" exclude="Build,Analyzers" />
+        <dependency id="IronPython" version="2.7.9" exclude="Build,Analyzers" />
+        <dependency id="MonoGame.Framework.DesktopGL" version="3.6.0.1625" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.6.2" />
+    </frameworkAssemblies>
+    <contentFiles>
+      <files include="any/net462/cimgui.dll" buildAction="Content" />
+      <files include="any/net462/cimgui.dylib" buildAction="Content" />
+      <files include="any/net462/cimgui.so" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\GitHub\Image-Filter\ImGui.NET.SampleProgram.XNA\bin\Debug\ImGuiNET.ImageFilter.exe" target="lib\net462\ImGuiNET.ImageFilter.exe" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\win-x64\cimgui.dll" target="content\cimgui.dll" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\win-x64\cimgui.dll" target="contentFiles\any\net462\cimgui.dll" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\osx-x64\cimgui.dylib" target="content\cimgui.dylib" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\osx-x64\cimgui.dylib" target="contentFiles\any\net462\cimgui.dylib" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\linux-x64\cimgui.so" target="content\cimgui.so" />
+    <file src="C:\GitHub\Image-Filter\deps\cimgui\linux-x64\cimgui.so" target="contentFiles\any\net462\cimgui.so" />
+  </files>
+</package>
