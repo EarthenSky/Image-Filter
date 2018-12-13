@@ -367,11 +367,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\code\\imageFilter-2\\ImGui.NET.SampleProgram.XNA\\ImGui.NET.ImageFilter.csproj",
+      "projectUniqueName": "C:\\GitHub\\Image-Filter\\ImGui.NET.SampleProgram.XNA\\ImGui.NET.ImageFilter.csproj",
       "projectName": "ImGuiNET.ImageFilter",
-      "projectPath": "C:\\code\\imageFilter-2\\ImGui.NET.SampleProgram.XNA\\ImGui.NET.ImageFilter.csproj",
+      "projectPath": "C:\\GitHub\\Image-Filter\\ImGui.NET.SampleProgram.XNA\\ImGui.NET.ImageFilter.csproj",
       "packagesPath": "C:\\Users\\gabeg\\.nuget\\packages\\",
-      "outputPath": "C:\\code\\imageFilter-2\\ImGui.NET.SampleProgram.XNA\\obj\\",
+      "outputPath": "C:\\GitHub\\Image-Filter\\ImGui.NET.SampleProgram.XNA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -390,8 +390,8 @@
       "frameworks": {
         "net462": {
           "projectReferences": {
-            "C:\\code\\imageFilter-2\\ImGui.NET\\ImGui.NET.csproj": {
-              "projectPath": "C:\\code\\imageFilter-2\\ImGui.NET\\ImGui.NET.csproj"
+            "C:\\GitHub\\Image-Filter\\ImGui.NET\\ImGui.NET.csproj": {
+              "projectPath": "C:\\GitHub\\Image-Filter\\ImGui.NET\\ImGui.NET.csproj"
             }
           }
         }

@@ -149,7 +149,7 @@ namespace ImGuiNET.ImageFilter
             foreach (Component c in _componentList) {
                 if (c.disabled == false) {  // Also passes image size.
                     //Console.WriteLine(op.Invoke(c.Run, genericData, c.GetComponentValueList(), imgSize.X, imgSize.Y)[0][2]);
-                    genericData = op.Invoke( c.Run, genericData, c.GetComponentValueList(), imgSize.X, imgSize.Y);  
+                    genericData = op.Invoke( c.Run, genericData, c.GetComponentValueList(), (int)imgSize.X, (int)imgSize.Y);  
                 }
             }
 

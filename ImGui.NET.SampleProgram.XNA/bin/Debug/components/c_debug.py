@@ -33,7 +33,7 @@ class Component():
         self._components.append( (10, "Component5", 0, None, None, 4, True) )
 
     ### component_values is a list of user edited component values.  They are mapped the same as added abve.
-    def run(self, image_data, component_values, width, size):
+    def run(self, image_data, component_values, width, height):
         print( type(image_data[0]).__name__ )
         print( "bef: " + image_data[0] )
 

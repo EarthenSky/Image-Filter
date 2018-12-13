@@ -16,3 +16,12 @@ C:\code\imageFilter-2\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.AssemblyInfoI
 C:\code\imageFilter-2\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.AssemblyInfo.cs
 C:\code\imageFilter-2\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.dll
 C:\code\imageFilter-2\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.pdb
+C:\GitHub\Image-Filter\ImGui.NET\bin\Debug\netstandard2.0\ImGui.NET.deps.json
+C:\GitHub\Image-Filter\ImGui.NET\bin\Debug\netstandard2.0\ImGui.NET.dll
+C:\GitHub\Image-Filter\ImGui.NET\bin\Debug\netstandard2.0\ImGui.NET.pdb
+C:\GitHub\Image-Filter\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.csprojAssemblyReference.cache
+C:\GitHub\Image-Filter\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.csproj.CoreCompileInputs.cache
+C:\GitHub\Image-Filter\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.AssemblyInfoInputs.cache
+C:\GitHub\Image-Filter\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.AssemblyInfo.cs
+C:\GitHub\Image-Filter\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.dll
+C:\GitHub\Image-Filter\ImGui.NET\obj\Debug\netstandard2.0\ImGui.NET.pdb

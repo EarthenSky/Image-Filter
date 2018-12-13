@@ -14,9 +14,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="C:\code\imageFilter-2\deps\cimgui\win-x64\cimgui.dll" CopyToOutputDirectory="PreserveNewest" />
-        <Content Include="C:\code\imageFilter-2\deps\cimgui\osx-x64\cimgui.dylib" CopyToOutputDirectory="PreserveNewest" />
-        <Content Include="C:\code\imageFilter-2\deps\cimgui\linux-x64\cimgui.so" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="C:\GitHub\Image-Filter\deps\cimgui\win-x64\cimgui.dll" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="C:\GitHub\Image-Filter\deps\cimgui\osx-x64\cimgui.dylib" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="C:\GitHub\Image-Filter\deps\cimgui\linux-x64\cimgui.so" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
 
     <ItemGroup>

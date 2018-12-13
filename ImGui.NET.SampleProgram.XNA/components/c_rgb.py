@@ -41,7 +41,7 @@ class Component():
         self._components.append( (7, "B Mod", 1.0, 0.0, 8.0, 2, True) )
 
     ''' component_values is a list of user edited component values.  They are mapped the same as added in the above class. '''
-    def run(self, image_data, component_values, width, size):
+    def run(self, image_data, component_values, width, height):
         r_add = component_values[1]
         g_add = component_values[2]
         b_add = component_values[3]
