@@ -8,5 +8,5 @@
 - Add reference to Microsoft.CSharp (for using the dynamic type)
 
 ### Use information.
-- All component files must start with "m_" and end with .py.  The search pattern used to identify components in the components folder is "m_*.py"
+- All component files must start with "c_" and end with .py.  The search pattern used to identify components in the components folder is "c_*.py"
 -
