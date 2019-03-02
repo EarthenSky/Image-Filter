@@ -25,12 +25,15 @@ class Component():
 
         new_image_data = []
 
-        for index in range(0, len(image_data)):
+        IMG_DATA_LEN = len(image_data)
+        
+        print("start")
+        for index in range(0, IMG_DATA_LEN):
             count = smoothing
             px_r = image_data[index][0] * smoothing
             px_g = image_data[index][1] * smoothing
             px_b = image_data[index][2] * smoothing
-
+            
             if (is_horizontal):
                 case_l = (index % width)==0
                 case_r = ((index+1) % width)==0
@@ -49,6 +52,10 @@ class Component():
                 px_g += (0 if case_u else image_data[index-width][1]) + (0 if case_d else image_data[index+width][1])
                 px_b += (0 if case_u else image_data[index-width][2]) + (0 if case_d else image_data[index+width][2])
 
-            new_image_data.append( [int(px_r/count), int(px_g/count), int(px_b/count), 255] )
+            new_image_data.append( [px_r/count, px_g/count, px_b/count, 255] )
 
+            if index % IMG_DATA_LEN/2 == 0:
+                print("middle")
+                
+        print("end")
         return new_image_data  # This is returning the new image data list.

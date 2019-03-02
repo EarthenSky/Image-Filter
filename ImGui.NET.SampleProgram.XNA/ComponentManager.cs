@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Numerics;  // For Vector2.  
+using System.Numerics;  // For Vector2.
 
 // iron python stuff.
 using Microsoft.Scripting.Hosting;
@@ -109,7 +109,7 @@ namespace ImGuiNET.ImageFilter
             }
         }
 
-        /// <summary> This function Draws the component boxes </summary>  
+        /// <summary> This function Draws the component boxes </summary>
         public void DrawComponents(ComponentLoader componentLoader, ImagePainter imagePainter)
         {
             ImGui.PushStyleVar(ImGuiStyleVar.ChildRounding, 1.0f);
@@ -123,23 +123,23 @@ namespace ImGuiNET.ImageFilter
                 c.Draw(_componentHeight);
             }
 
-            ImGui.EndChild(); 
+            ImGui.EndChild();
 
             // ImGui.ShowDemoWindow();
         }
 
-        /// <summary> This function draws remove a component from the list based on it's id. </summary>  
+        /// <summary> This function draws remove a component from the list based on it's id. </summary>
         public void RemoveComponent(Component comp) {
             _componentList.Remove(comp);
         }
 
-        /// <summary> This function calls the code functions in all the components. </summary>  
+        /// <summary> This function calls the code functions in all the components. </summary>
         public void IterateComponents(ref Color[] colorData, Microsoft.Xna.Framework.Vector2 imgSize) {
             // Convert color to generic data type first.
             IronPython.Runtime.List genericData = new IronPython.Runtime.List();  // int of size 4.
             foreach (Color c in colorData) {
                 genericData.append( new IronPython.Runtime.List { c.R, c.G, c.B, c.A } );
-            }         
+            }
 
             Console.WriteLine("to-array done");
 
@@ -149,7 +149,7 @@ namespace ImGuiNET.ImageFilter
             foreach (Component c in _componentList) {
                 if (c.disabled == false) {  // Also passes image size.
                     //Console.WriteLine(op.Invoke(c.Run, genericData, c.GetComponentValueList(), imgSize.X, imgSize.Y)[0][2]);
-                    genericData = op.Invoke( c.Run, genericData, c.GetComponentValueList(), (int)imgSize.X, (int)imgSize.Y);  
+                    genericData = op.Invoke( c.Run, genericData, c.GetComponentValueList(), (int)imgSize.X, (int)imgSize.Y);
                 }
             }
 

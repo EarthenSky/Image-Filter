@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Timers;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -33,14 +35,17 @@ namespace ImGuiNET.ImageFilter
             return _filteredImage;
         }
 
-        // Runs component code.  
+        // Runs component code.
         // TODO: only show a 256x256 image and apply the change to it when pressing update.  When saving do entire image.
         public void UpdateFilteredImage(ComponentManager componentManager) {
             if (_mainImage == null) { Console.WriteLine("Error: Please open an image before updating it."); return; }  // Check for existance of image to do modification on.
 
+            Console.WriteLine("Started applying Changes");
+            Stopwatch stopWatch = new Stopwatch(); stopWatch.Start();
+
             // Reset filtered image.
-            if (_filteredImage != null) { _filteredImage.Dispose(); }  // Do I need this?
-            _filteredImage = new Texture2D(_graphics.GraphicsDevice, _mainImage.Width, _mainImage.Height);
+            //if (_filteredImage != null) { _filteredImage.Dispose(); }  // Do I need this?  I should not be using this.
+            //_filteredImage = new Texture2D(_graphics.GraphicsDevice, _mainImage.Width, _mainImage.Height);
 
             // Get initial color data from the main image. (the Original)
             Color[] colorData = new Color[_mainImage.Width * _mainImage.Height];
@@ -49,6 +54,9 @@ namespace ImGuiNET.ImageFilter
             componentManager.IterateComponents(ref colorData, new Vector2(_mainImage.Width, _mainImage.Height));
 
             _filteredImage.SetData<Color>(colorData);
+
+            stopWatch.Stop();
+            Console.WriteLine("Time elapsed: " + stopWatch.Elapsed);
 
             colorData = null;  // This tells the GC to deallocate this object.
         }
@@ -69,7 +77,7 @@ namespace ImGuiNET.ImageFilter
                 }
                 return 0;
             }
-            catch { return 1; } 
+            catch { return 1; }
         }
 
         public void DrawImage()
@@ -80,7 +88,7 @@ namespace ImGuiNET.ImageFilter
             if (!isFilteredImage) {
                 if (_mainImage != null) {
                     _spriteBatch.Draw(_mainImage, new Rectangle(8, 8, _mainImage.Width, _mainImage.Height), Color.White);
-                } 
+                }
             } else {
                 if (_filteredImage != null) {
                     _spriteBatch.Draw(_filteredImage, new Rectangle(8, 8, _filteredImage.Width, _filteredImage.Height), Color.White);
